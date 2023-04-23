@@ -13,7 +13,8 @@ app.use(express.json())
 
 // app.route('/:parametro').get((req, res) => res.send(req.params.parametro))
 
-app.route('/').post((req, res) => {
-    const {livros_favoritos} = req.body
-    res.send(livros_favoritos)
-})
+// app.route('/').post((req, res) => {
+//     const {livros_favoritos} = req.body
+//     res.send(livros_favoritos)
+// })
+
