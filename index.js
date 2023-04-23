@@ -5,7 +5,7 @@ const app = express()
 app.listen('3000')
 
 // middleware
-app.use(express.json())
+// app.use(express.json())
 
 // app.route('/').get((req, res) => res.send(req.query.name))
 
@@ -18,3 +18,6 @@ app.use(express.json())
 //     res.send(livros_favoritos)
 // })
 
+app.route('/').get((req,res) => res.send("Olá meu amigo"))
+app.route('/:variavel').get((req,res) => res.send(req.params.variavel))
+app.route('/identidade/:nome').get((req,res) => res.send(req.params.nome))
